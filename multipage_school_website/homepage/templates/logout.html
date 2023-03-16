@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div style="margin-top: 15rem; margin-left: 10rem;"></div>
+<h1 style="margin-left: 10rem;">Hi, you are in the logout page [Jerry@admin greetings!]</h1>
+{% if request.user.is_authenticated %}
+    <div>
+        <form method="POST">{% csrf_token %}
+            <p> Are you sure you want to logout?</p>
+            <button type='submit'>yes I want to logout.</button>        
+        </form>
+    </div>
+</div>
+{% else %}
+<p style="margin-left: 10rem; margin-bottom: 5rem;">you are not logged in. would you like to <a href="/login">login</a>?</p>
+{% endif %}
+
+{% endblock %}

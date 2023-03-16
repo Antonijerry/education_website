@@ -1,0 +1,313 @@
+{% extends "index.html" %}
+
+{% block title %}
+    welcome to the homepage
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<header>
+    <div class="container header_container">
+        <!--first div class of header of the left-->
+        <div class="header_left">
+            <h1>Academic Excellence is our goal, join us today!</h1>
+            <p>
+                Lorem ipsum dolor sit am amo sit ejor Mollitia, atque quam explicabo odio ad libero! Necessitatibus!
+            </p>
+            <!--to create a link in a button form that leads to course web page-->
+            <a href="course.html" class="btn btn-primary">Get started</a>
+        </div>
+
+        <!--second div class of the right header-->
+        <div class="header_right">
+            <div class="header_right-image">
+                <img src="{% static '/css/flw1.jpg'%}" alt="my image"/>
+                
+            </div>
+        </div>
+    </div>
+</header>
+<!--:::::::::::::::::::::::::::::::::::::::::::::::end of Header-->
+
+
+<section class="categories">
+    <div class="container categories_container">
+        <div class="categories_left">
+            <h1>categories</h1>
+            <p>
+                adipisicing elit. Labore qui error incidunt ex optio deleniti fugiat laborum, quisquam magni aliquid repudiandae mollitia. Sunt beatae aperiam sed.
+            </p>
+            <a href="a" class="btn">Learn more</a>
+        </div>
+
+        <div class="categories_right">
+            <article class="category">
+                <span class="category_icon"><i class="uil uil-bitcoin-circle"></i></span>
+                <h5>Blockchain</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                </p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="uil uil-swatchbook"></i></i></span>
+                <h5>Graphic design</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                </p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="uil uil-dollar-alt"></i></span>
+                <h5>Finance</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                </p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="uil uil-map-marker-question"></i></span>
+                <h5>Marketing</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                </p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="uil uil-music"></i></span>
+                <h5>Music</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                </p>
+            </article>
+
+            <article class="category">
+                <span class="category_icon"><i class="uil uil-comment-alt-chart-lines"></i></span>
+                <h5>Business</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+<!--:::::::::::::::::::::::::::::end of category:::::::::::::::::::::::::::::-->
+
+<!--::::::::::::::::::::::::::::::::::::::popular courses::::::::::::::::::::::::::-->
+<section class="courses">
+    <h2>Our Popular Courses</h2>
+    <div class="container courses_container">
+        <article class="course">
+            <div class="course_image">
+                <img src="./images/bg12.jpg" alt="">
+            </div>
+            <div class="course_info">
+                <h4>Responsive Social Media Website UI design</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores, nisi recusandae dignissim
+                </p>
+                <a href="course.html" class="btn btn-primary"> Learn More</a>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course_image">
+                <img src="./images/bg14.jpg" alt="">
+            </div>
+            <div class="course_info">
+                <h4>Responsive SmartPhone website Design</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores, nisi recusandae dignissim
+                </p>
+                <a href="course.html" class="btn btn-primary"> Learn More</a>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course_image">
+                <img src="./images/bg11.jpg" alt="">
+            </div>
+            <div class="course_info">
+                <h4>Responsive Admin Dashboard UI Design</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. asperiores, nisi recusandae dignissim
+                </p>
+                <a href="course.html" class="btn btn-primary"> Learn More</a>
+            </div>
+        </article>
+    </div>
+</section>
+<!--:::::::::::::::::::::::::::::End of the Course:::::::::::::::::::::::::::-->
+
+<!--:::::::::::::::::::::::::::::beginning of Faqs:::::::::::::::::::::::::::-->
+<section class="faqs">
+    <h2>Frequently Asked Questions</h2>
+    <div class="container faqs_container">
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+        <article class="faq">
+            <div class="faq_icon"><i class="uil uil-plus"></i></div>
+            <div class="question_answer">
+                <h4>how do i know the course for me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi unde accusantium perspiciatis! Quidem praesentium quis repellat temporibus, perspiciatis officia facere dolorem ipsa maxime expedita odit exercitationem asperiores! Eum, asperiores!</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!---:::::::::::::::::::::::::::::::::::::::end faq question:::::::::::::::::::::-->
+
+
+<!--:::::::::::::::::::::::::::::::::::student of Testimonial:::::::::::::::::::::::-->
+
+<section class="container testimonials_container mySwiper">
+    <h2>Students' Testimonial</h2>
+    <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/schboy3.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Kelechi Igwe</h5>
+                <small>student</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corporis inventore quasi labore! Officia architecto animi sed tempore,
+                    maiores blanditiis vel hic aspernatur, mollitia sunt, provident ducimus libero a laboriosam?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/schboy3.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Anthony Jerry</h5>
+                <small>Software Engineer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corporis inventore quasi labore! Officia architecto animi sed tempore,
+                    maiores blanditiis vel hic aspernatur, mollitia sunt, provident ducimus libero a laboriosam?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/schboy3.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Osime Stephanie</h5>
+                <small>Graphic Designer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corporis inventore quasi labore! Officia architecto animi sed tempore,
+                    maiores blanditiis vel hic aspernatur, mollitia sunt, provident ducimus libero a laboriosam?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/schboy3.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>James Joy</h5>
+                <small>web developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corporis inventore quasi labore! Officia architecto animi sed tempore,
+                    maiores blanditiis vel hic aspernatur, mollitia sunt, provident ducimus libero a laboriosam?
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="./images/schboy3.jpg" alt="">
+            </div>
+            <div class="testimonial_info">
+                <h5>Godstime Gospel</h5>
+                <small>Graphic Designer </small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate corporis inventore quasi labore! Officia architecto animi sed tempore,
+                    maiores blanditiis vel hic aspernatur, mollitia sunt, provident ducimus libero a laboriosam?
+                </p>
+            </div>
+        </article>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+<!--:::::::::::::::::::::::::::::::::::end of Testimonial:::::::::::::::::::::::-->
+
+
+
+{% endblock %}

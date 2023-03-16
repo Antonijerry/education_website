@@ -1,0 +1,40 @@
+
+{% extends "index.html" %}
+
+{% block title %}
+    login page
+{% endblock %}
+
+{% block content %}
+
+
+<!--login form-->
+    <div class="logincontainer">
+        <div class="loginlogo"></div>
+        <div class="logintitle"> LOGIN </div>
+
+        {% if not request.user.is_authenticated %}
+
+        <form class="inputs" method="POST">{% csrf_token %}
+            <label> USERNAME </label>
+            <input style="color: blue; font-weight: bold;" type="text" class="form1" name="username" placeholder="type in ur user_id" />
+            <label> PASSWORD </label>
+            <input style="color: blue;" type="password" class="form1" name="password" placeholder="Min 8 characters long" />
+
+            <button type="submit" class="login-button">LOGIN</button>
+            
+            
+            <!--<div class="checkbox">
+            <input type="checkbox" ><span id="checkbox1">Remember me</span>
+            <label>Remember me</label><input type="checkbox">
+            </div>-->
+            
+        </form>
+
+        <p style="color: black;">Need an account?please <a style="color: green;" href="/register">register </a></p>
+</div>
+{% else %}
+<p>you are already logged in. would you like to <a href='/logout/'>logout</a>?</p>
+{% endif %}
+        
+{% endblock %}
